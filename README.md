@@ -12,19 +12,20 @@
     - Create the appropriate `config.json` file
     - Launch a container with the previously created config file
 
-            docker container run -v $(pwd)/config.json:/app/config.json -p PORT:PORT [-p PORTn:PORTn] --name proxy -d palobo/xmr-node-proxy
+            docker container run -v $(pwd)/config.json:/app/config.json -p PORT:PORT \
+            [-p PORTn:PORTn] --name proxy -d palobo/xmr-node-proxy
 
         **Where:** PORT is the port you configured in your `config.json` in the `listeningPorts` object. If you have multiple ports simply add as many `-p PORT:PORT` parameters as needed.
 
 - Check the logs:
 
-    docker container logs -f proxy
+        docker container logs -f proxy
 
 
 ## Donations
 
-If you'd like to thank my work in dockerizing veriumMiner, donations are accepted in a number of currencies:
+If you'd like to thank my work in dockerizing xmr-node-proxy, donations are accepted in a number of currencies:
 
-- BTC: `1GKzyV59tiW6gLUd9DKTcGqE15g9UUr2EL`
-- ETH: `0x1F72BFc6fCDF120706417E4610327742b7169eB6`
-- LTC: `LWwu11R6SyMKDdWF8b3wNv6CMw1WHMriDP`
+- BTC: `17D3VRudF4CPZTAfCqf3XoVMKHiqq36HQF`
+- ETH: `0xA86Efc80Ae2C471Fa0bF3956E85d6748552D015E`
+- LTC: `LbUmXfLGEZZVwS3ixLeo2EoyK26BrxT7Zs`
