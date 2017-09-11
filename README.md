@@ -1,6 +1,6 @@
 # What is xmr-node-proxy 
 
-[xmr-node-proxy](https://github.com/Snipa22/xmr-node-proxy) is a Monero stratum protocol proxy. xmr-node-proxy is written in node and is extremely lightweight. It can easily be deployed on a T2.Micro instance on AWS and handçe up to 2000 connections. 
+[xmr-node-proxy](https://github.com/Snipa22/xmr-node-proxy) is a Monero stratum protocol proxy. xmr-node-proxy is written in node and is extremely lightweight. It can easily be deployed on an AWS T2.Micro instance and handle up to 2000 connections. 
 
 ## How to use this image
 
