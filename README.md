@@ -7,10 +7,10 @@
 
 - Launch a container:
 
-    In order to function, the proxy needs a `[config.json](https://github.com/Snipa22/xmr-node-proxy/blob/master/config_example.json)` file properly configure and present in its app directory. 
+    In order to function, the proxy needs a [`config.json`](https://github.com/Snipa22/xmr-node-proxy/blob/master/config_example.json) file properly configure and present in its app directory. 
 
-    1. Create the appropriate `config.json` file
-    2. Launch a container with the previously created config file
+    - Create the appropriate `config.json` file
+    - Launch a container with the previously created config file
 
             docker container run -v $(pwd)/config.json:/app/config.json -p PORT:PORT [-p PORTn:PORTn] --name proxy -d palobo/xmr-node-proxy
 
