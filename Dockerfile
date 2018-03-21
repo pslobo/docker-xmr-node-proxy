@@ -1,8 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="Pedro Lobo <https://github.com/pslobo>"
 LABEL Name="Dockerized xmr-node-proxy"
-LABEL Version="1.1.1"
-
+LABEL Version="1.2"
     
 RUN export BUILD_DEPS="cmake \
                        pkg-config \
