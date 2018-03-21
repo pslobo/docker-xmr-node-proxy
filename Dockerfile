@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 LABEL maintainer="Pedro Lobo <https://github.com/pslobo>"
 LABEL Name="Dockerized xmr-node-proxy"
-LABEL Version="1.1"
+LABEL Version="1.1.1"
 
     
 RUN export BUILD_DEPS="cmake \
@@ -30,9 +30,11 @@ RUN export BUILD_DEPS="cmake \
     
     && apt-get --auto-remove purge -qqy ${BUILD_DEPS} \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && chown -R proxy.proxy /app \
+    && mkdir /logs && chown -R proxy.proxy /logs
     
 USER proxy
 WORKDIR /app
 
-CMD ["node","proxy.js"]
+ENTRYPOINT ["node","proxy.js"]
